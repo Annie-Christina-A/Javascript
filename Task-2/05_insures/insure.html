@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      margin-bottom: 50px;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <p>
+      05 A company insures its drivers in the following cases: a. If the driver
+      is married. b. If the driver is unmarried, male & amp; above 30 years of
+      age. c. If the driver is unmarried, female & amp; above 25 years of age.
+    </p>
+    <input
+      type="text"
+      name=""
+      placeholder="marital status"
+      id="marital_status"
+    />
+
+    <input type="text" placeholder="Gender" id="gender" />
+    <input type="text" placeholder="Enter your Age" name="" id="age" />
+    <button onclick="info()">generate</button>
+    <div id="output"></div>
+    <script>
+      function info() {
+        let marital_status = document.getElementById("marital_status").value.toLowerCase();
+        let gender = document.getElementById("gender").value.toLowerCase();
+        let age = Number(document.getElementById("age").value);
+        let output = document.getElementById("output");
+
+        if (marital_status === "married") {
+          output.innerHTML = `<p>Eligible</p>`;
+        } else if (marital_status === "unmarried") {
+          if ((gender === "male" && age > 30) || (gender === "female" && age > 25)) {
+            output.innerHTML = `<p>Eligible</p>`;
+          } else {
+            output.innerHTML = `<p>Not Eligible</p>`;
+          }
+        } else {
+          output.innerHTML = `<p>Invalid input. Please check your entries.</p>`;
+        }
+      }
+    </script>
+
+  </body>
+</html>

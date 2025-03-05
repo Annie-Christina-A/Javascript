@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="products">
+        <div class="product" data-id="1" data-price="19.50">
+          <span>Item-1</span>
+          <span>$19.50</span>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+        <div class="product" data-id="2" data-price="25.99">
+          <span>Item-2</span>
+          <span>$25.99</span>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+        <div class="product" data-id="3" data-price="15.99">
+          <span>Item-3</span>
+          <span>$15.99</span>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+      <h2>Your Cart</h2>
+      <table id="cart">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="checkout">
+        <h3>Total: $ <span id="grand-total">0.00</span></h3>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

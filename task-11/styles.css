@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 50px;
+}
+.quiz-container{
+    width: 550px;
+    height: 350px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+.quiz_pattern h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.quiz_pattern label{
+    margin-top: 10px;
+    display: block;
+}
+.quiz_pattern input{
+    margin-right: 10px;
+}
+.quiz-container button{
+    padding: 10px 40px;
+    
+    border: none;
+    background-color: #0073EE;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.quiz-container .nxt{
+    margin-left: 200px;
+
+}
+.quiz-container .prev{
+    padding: 10px 30px;
+    
+    margin-top: 40px;
+}
+.quiz-container button:hover{
+    background-color: #015BBB;
+}

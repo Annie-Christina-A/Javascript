@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html {
+  font-size: 22px;
+}
+body {
+  padding: 1rem;
+  background-color: #b7c7d6;
+}
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.box {
+  height: 8rem;
+  border: 5px solid white;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.control {
+  max-width: 1200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 0.7rem;
+  background-color: #82b6ac;
+  color: #fff;
+  border: 2px solid #97c5bb;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+#search {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  padding: 0 10px;
+  border: 2px solid #97c5bb;
+  border-radius: 3px;
+  font-size: 0.7rem;
+}
+.btn:hover,.btn-clicked{
+ background-color: #545967;
+ border: 3px solid #82b6ac;
+}
+.box img:hover{
+    transform: scale(1.5);
+}

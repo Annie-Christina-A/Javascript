@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      margin-bottom: 20px;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    td,
+    th {
+      text-align: left;
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+    }
+  </style>
+  <body>
+    <p>
+      Any integer is input through the keyboard. Write a program to find out
+      whether it is an odd number or even number.
+    </p>
+    <input type="text" placeholder="Enter a Number" id="number" />
+
+    <button onclick="calculate()">find</button>
+    <div id="output"></div>
+    <script>
+        function calculate(){
+      const num = Number(document.getElementById("number").value);
+
+      let output = document.getElementById("output");
+      if (num % 2 == 0) {
+        output.innerHTML = `<p>${num} is a Even Number</p>`;
+      } else {
+        output.innerHTML = `<p>${num} is a Odd Number</p>`;
+      }}
+    </script>
+  </body>
+</html>
